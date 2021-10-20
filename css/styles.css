@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
   color: #444444;
   font-weight: normal;
@@ -6,14 +7,18 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: "Lato", sans-serif;
+}
+
 .header {
   background-color: #03a6a6;
   height: 48px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .container {
-  width: 987px;
+  width: 987 px;
   margin: 0 auto;
 }
 
@@ -33,4 +38,38 @@ body {
   background-position-x: center;
   height: 480px;
   width: 100%;
+}
+
+.slogan {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.container .sellingponts p {
+  width: 300px;
+}
+
+.buttonshp {
+  display: flex;
+  width: 320px;
+}
+
+.buttonshp button {
+  font-family: "Roboto", sans-serif;
+  flex-direction: row;
+  flex: content;
+  background-color: #b97860;
+  color: #444444;
+}
+
+.container .offertext {
+  height: 240px;
+  background-color: #9cc4cf;
+}
+
+.offertext {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
 }
