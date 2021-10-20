@@ -1,0 +1,36 @@
+body {
+  background-color: whitesmoke;
+  color: #444444;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.header {
+  background-color: #03a6a6;
+  height: 48px;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 987px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 35px;
+  padding: 5px;
+}
+
+.hero-banner {
+  height: 480px;
+}
+
+.hike {
+  background-image: url(/img/sylvain-mauroux-iOBWoIvldmw-unsplash.jpg\ riktig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 480px;
+  width: 100%;
+}
