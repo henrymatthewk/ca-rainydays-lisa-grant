@@ -1,3 +1,4 @@
+/*body*/
 body {
   font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
@@ -6,11 +7,11 @@ body {
   line-height: 1.4;
   margin: 0;
 }
-
+/*fonts*/
 p {
   font-family: "Lato", sans-serif;
 }
-
+/* header*/
 .header {
   background-color: #03a6a6;
   height: 48px;
@@ -26,7 +27,7 @@ p {
   height: 35px;
   padding: 5px;
 }
-
+/*hero-banner*/
 .hero-banner {
   height: 480px;
 }
@@ -45,22 +46,31 @@ p {
   color: aliceblue;
   text-align: center;
 }
+/*text- sellingpoint*/
+
+.container .sellingponts h2 {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
 
 .container .sellingponts p {
+  margin-left: 20px;
+  margin-top: 5px;
   width: 300px;
 }
 
 .buttonshp {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
   width: 320px;
 }
 
 .buttonshp button {
   font-family: "Roboto", sans-serif;
-  flex-direction: row;
-  flex: content;
-  background-color: #b97860;
+  background-color: #e09f88;
   color: #444444;
+  width: 200px;
 }
 
 .container .offertext {
@@ -70,6 +80,81 @@ p {
 
 .offertext {
   text-align: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   color: aliceblue;
+  padding-top: 70px;
+}
+
+.offertext h2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.offertext h5 {
+  margin-top: 0;
+}
+
+.input-text {
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+}
+
+.join {
+  font-family: "Lato", sans-serif;
+  background-color: gainsboro;
+  border-radius: 10%;
+  border: #444444;
+  font-size: medium;
+}
+
+.inspoimg .container {
+  margin-top: 20px;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.imgcano {
+  background-image: url(/img/kano.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+.imgwinter {
+  background-image: url(/img/vinter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+  width: 320px;
+}
+
+.imgwinter .text {
+  color: #444444;
+}
+
+.imgphoto .text {
+  color: #444444;
+  text-align: right;
+}
+
+.imgphoto {
+  background-image: url(/img/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+  width: 320px;
 }
