@@ -58,32 +58,32 @@ p {
 .flex {
   display: flex;
 }
-/*
+
 .container .sellingponts h2 {
   margin-left: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .container .sellingponts p {
   margin-left: 20px;
   margin-top: 5px;
-  width: 300px;
-}*/
-
-.buttonshp {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  width: 100%100%;
+  width: 100%;
 }
 
-.buttonshp button {
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonhp {
   font-family: "Roboto", sans-serif;
   background-color: #daaf9f;
   color: #444444;
   width: 200px;
+  margin-bottom: 20px;
 }
-
+/*offer 10%*/
 .container .offertext {
   height: 240px;
   background-color: #588b99;
@@ -119,6 +119,7 @@ p {
   font-size: medium;
 }
 
+/*inspo pictures*/
 .inspoimg .container {
   margin-top: 20px;
 }
@@ -172,7 +173,7 @@ p {
   height: 230px;
   width: 100%;
 }
-
+/*footer*/
 .footer .container {
   display: flex;
   flex-direction: column;
