@@ -252,7 +252,32 @@ nav li {
   padding-right: 10px;
 }
 
+.navmobil {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  justify-content: center;
+  height: 48px;
+  background-color: #a2c8c8;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 350px;
+}
+
+.navmobilcontetn a i {
+  color: rgba(12, 53, 65, 1);
+  margin-top: 15px;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media screen and (min-width: 767px) {
+  .navmobil {
+    display: none;
+  }
+
   .container {
     width: 987px;
     margin-right: 10px;
