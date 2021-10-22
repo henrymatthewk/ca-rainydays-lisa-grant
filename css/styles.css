@@ -5,8 +5,7 @@ body {
   color: #444444;
   font-weight: normal;
   line-height: 1.4;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 /*fonts*/
 p {
@@ -23,50 +22,27 @@ p {
 }
 
 .container {
-  width: 350px;
-  margin-right: 10px;
-  margin-left: 10px;
   margin: 0 auto;
 }
 
 .logo img {
   height: 35px;
   padding: 8px;
+  margin-left: 10px;
 }
 
 .flexnav {
-  display: none;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
 nav li {
-  display: flex;
   display: inline;
   padding: 20px;
 }
 
-.flexnav div {
-  margin-top: 0px;
-}
-
-.fa-user-alt {
-  margin-right: 10px;
-  color: rgba(12, 53, 65, 1);
-}
-
-.fa-info {
-  margin-right: 10px;
-  color: rgba(12, 53, 65, 1);
-}
-
-.fa-search {
-  margin-right: 15px;
-  color: rgba(12, 53, 65, 1);
-}
-
-.fa-shopping-bag {
+.navdesktop i {
   margin-right: 10px;
   color: rgba(12, 53, 65, 1);
 }
@@ -85,7 +61,6 @@ nav li {
 }
 
 .slogan {
-  font-family: "Roboto", sans-serif;
   color: aliceblue;
   text-align: center;
   padding: 50px;
@@ -94,21 +69,23 @@ nav li {
 .slogan h1 {
   margin-top: 0px;
 }
-/*text- sellingpoint*/
 
+/*text- sellingpoint*/
 .flexsp {
   display: flex;
+  justify-content: center;
 }
 
-.container .sellingpoints h2 {
-  margin-left: 10px;
-  margin-bottom: 5px;
+.sellingpoints h2 {
+  text-align: center;
+  margin: 5px 10px 0 10px;
+  max-width: 400px;
 }
 
-.container .sellingpoints p {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
+.sellingpoints p {
+  text-align: center;
+  margin: 5px 10px 0 10px;
+  max-width: 400px;
 }
 
 .buttoncontainer {
@@ -121,8 +98,12 @@ nav li {
   background-color: #daaf9f;
   color: #444444;
   width: 200px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 0;
 }
+
 /*offer 10%*/
 .container .offertext {
   height: 240px;
@@ -132,7 +113,6 @@ nav li {
 .offertext {
   text-align: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   color: aliceblue;
   padding-top: 70px;
 }
@@ -151,12 +131,13 @@ nav li {
   font-size: medium;
 }
 
-.join {
+.joinbutton {
   font-family: "Lato", sans-serif;
   background-color: gainsboro;
   border-radius: 10%;
   border: #444444;
   font-size: medium;
+  margin-left: 0px;
 }
 
 /*inspo pictures*/
@@ -171,49 +152,41 @@ nav li {
 }
 
 .text {
-  font-family: "Roboto", sans-serif;
   color: white;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.imgcano {
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 230px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#inspoimg1 {
   background-image: url(/img/kano.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 230px;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
-.imgwinter {
+#inspoimg2 {
   background-image: url(/img/vinter.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 230px;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
-.imgwinter .text {
+#inspoimg2 .text {
   color: #444444;
 }
 
-.imgphoto .text {
+#inspoimg3 .text {
   color: #444444;
   text-align: right;
 }
 
-.imgphoto {
+#inspoimg3 {
   background-image: url(/img/photo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 230px;
-  width: 100%;
 }
+
 /*footer*/
 .footer .container {
   display: flex;
@@ -236,18 +209,10 @@ nav li {
 .footerinfo2 p {
   font-size: 8px;
   margin-top: 20px;
+  text-align: left;
 }
 
-.fa-facebook-square {
-  color: rgba(12, 53, 65, 1);
-  padding-right: 10px;
-}
-.fa-twitter {
-  color: rgba(12, 53, 65, 1);
-  padding-right: 10px;
-}
-
-.fa-instagram {
+.footerinfo i {
   color: rgba(12, 53, 65, 1);
   padding-right: 10px;
 }
@@ -262,10 +227,10 @@ nav li {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 350px;
+  width: 100%;
 }
 
-.navmobilcontetn a i {
+.navmobilcontent a i {
   color: rgba(12, 53, 65, 1);
   margin-top: 15px;
   font-size: 25px;
@@ -277,18 +242,14 @@ nav li {
   .navmobil {
     display: none;
   }
-
   .container {
-    width: 987px;
     margin-right: 10px;
     margin-left: 10px;
     margin: 0 auto;
   }
-
   .navdesktop {
     display: flex;
   }
-
   a:link {
     text-decoration: none;
   }
@@ -296,42 +257,28 @@ nav li {
     color: #588b99;
   }
   a:visited {
-    color: darkgrey;
+    color: #588b99;
   }
   a:hover {
     color: aliceblue;
   }
-
   .imgbox {
     display: flex;
     flex-direction: row;
   }
-
   .flexsp {
     display: flex;
-    width: 987px;
+    justify-content: center;
   }
 
-  .container .offertext {
-    width: 987px;
-  }
-  .imgcano {
+  .img {
     width: 100%;
-    margin-right: 10px;
+    margin: 0 10px;
   }
 
-  .imgwinter {
-    width: 100%;
-    margin-right: 10px;
-  }
-
-  .imgphoto {
-    width: 100%;
-  }
   .footer .container {
     height: 250px;
   }
-
   .content-footer {
     display: flex;
     flex-direction: row;
