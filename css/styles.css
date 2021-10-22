@@ -5,8 +5,6 @@ body {
   color: #444444;
   font-weight: normal;
   line-height: 1.4;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -20,15 +18,59 @@ p {
   height: 48px;
 }
 
+.navdesktop {
+  display: none;
+}
+
 .container {
-  width: 987 px;
+  width: 350px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin: 0 auto;
 }
 
 .logo img {
   height: 35px;
-  padding: 5px;
+  padding: 8px;
 }
+
+.flexnav {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav li {
+  display: flex;
+  display: inline;
+  padding: 20px;
+}
+
+.flexnav div {
+  margin-top: 0px;
+}
+
+.fa-user-alt {
+  margin-right: 10px;
+  color: rgba(12, 53, 65, 1);
+}
+
+.fa-info {
+  margin-right: 10px;
+  color: rgba(12, 53, 65, 1);
+}
+
+.fa-search {
+  margin-right: 15px;
+  color: rgba(12, 53, 65, 1);
+}
+
+.fa-shopping-bag {
+  margin-right: 10px;
+  color: rgba(12, 53, 65, 1);
+}
+
 /*hero-banner*/
 .hero-banner {
   height: 480px;
@@ -40,7 +82,6 @@ p {
   background-size: cover;
   background-position-x: center;
   height: 480px;
-  width: 100%;
 }
 
 .slogan {
@@ -55,20 +96,19 @@ p {
 }
 /*text- sellingpoint*/
 
-.flex {
+.flexsp {
   display: flex;
 }
 
-.container .sellingponts h2 {
-  margin-left: 20px;
+.container .sellingpoints h2 {
+  margin-left: 10px;
   margin-bottom: 5px;
-  width: 100%;
 }
 
-.container .sellingponts p {
-  margin-left: 20px;
+.container .sellingpoints p {
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 5px;
-  width: 100%;
 }
 
 .buttoncontainer {
@@ -127,6 +167,7 @@ p {
 .imgbox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .text {
@@ -178,7 +219,6 @@ p {
   display: flex;
   flex-direction: column;
   background-color: rgb(173, 173, 173);
-  width: 100%;
   height: 360px;
   margin-top: 20px;
 }
@@ -210,4 +250,66 @@ p {
 .fa-instagram {
   color: rgba(12, 53, 65, 1);
   padding-right: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 987px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: 0 auto;
+  }
+
+  .navdesktop {
+    display: flex;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  a:link {
+    color: #588b99;
+  }
+  a:visited {
+    color: darkgrey;
+  }
+  a:hover {
+    color: aliceblue;
+  }
+
+  .imgbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexsp {
+    display: flex;
+    width: 987px;
+  }
+
+  .container .offertext {
+    width: 987px;
+  }
+  .imgcano {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .imgwinter {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .imgphoto {
+    width: 100%;
+  }
+  .footer .container {
+    height: 250px;
+  }
+
+  .content-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
