@@ -53,7 +53,7 @@ nav li {
 }
 
 .hike {
-  background-image: url(/img/sylvain-mauroux-iOBWoIvldmw-unsplash.jpg\ riktig.jpg);
+  background-image: url("/img/sylvain-mauroux-iOBWoIvldmw-unsplash.jpg\riktig.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -166,25 +166,25 @@ nav li {
   margin-bottom: 20px;
 }
 
-#inspoimg1 {
-  background-image: url(/img/kano.jpg);
+.inspoimg1 {
+  background-image: url("/img/kano.jpg");
 }
 
-#inspoimg2 {
-  background-image: url(/img/vinter.jpg);
+.inspoimg2 {
+  background-image: url("/img/vinter.jpg");
 }
 
-#inspoimg2 .text {
+.inspoimg2 .text {
   color: #444444;
 }
 
-#inspoimg3 .text {
+.inspoimg3 .text {
   color: #444444;
   text-align: right;
 }
 
-#inspoimg3 {
-  background-image: url(/img/photo.jpg);
+.inspoimg3 {
+  background-image: url("/img/photo.jpg");
 }
 
 /*footer*/
@@ -285,3 +285,10 @@ nav li {
     justify-content: space-evenly;
   }
 }
+/*
+@media screen and (min-width: 1024px) {
+  .hike {
+    max-width: 1040px;
+    margin-top: 20px;
+  }
+}*/
